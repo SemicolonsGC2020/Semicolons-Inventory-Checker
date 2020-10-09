@@ -1,4 +1,19 @@
-# Semicolons-Inventory-Checker
-Semicolons; Inventory Checker  is a system designed where customer and admin have a access to the store inventory to make the life easy on shopping this system inspired to local stores that still using paper inventorys and inspired to pandemic where  this is easy for customer to view items in computer rather than walk in stores.
+Semicolons; Itemchecker
+
+Features:
+INSERT Item data and Client data;
+DELETE Item data and Client data;
+UPDATE Item data and Client data;
+SEARCH Item data and Client data;
+VIEW Item data and Client table;
+VIEW Item data Image;
+
+Setup:
+Copy the contents of the "FinalProject" folder in C:\Users\USER\Documents\NetBeansProjects
+Copy the contents of the "DatabaseFiles" folder in C:\xampp\mysql\data
 
 
+Credentials 
+For an administrator account:
+  username: admin
+  password: admin123!
