@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="870.0" prefWidth="1317.0" style="-fx-background-color: fffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.ClientController">
+   <children>
+      <Pane prefHeight="102.0" prefWidth="1317.0" style="-fx-background-color: F8CFCF;">
+         <children>
+            <Text fill="#9aadd5" layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM WATCHER" wrappingWidth="705.13671875">
+               <font>
+                  <Font name="Arial Bold" size="85.0" />
+               </font>
+            </Text>
+            <Button fx:id="Logout" layoutX="1241.0" layoutY="39.0" mnemonicParsing="false" onAction="#loadSecond" style="-fx-background-color: #9AADD5;" text="Logout" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutY="102.0" prefHeight="64.0" prefWidth="1317.0" style="-fx-background-color: #9AADD5;">
+         <children>
+            <Text fill="#f8cfcf" layoutX="14.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT" wrappingWidth="327.0">
+               <font>
+                  <Font name="Arial Bold" size="74.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane layoutY="166.0" prefHeight="704.0" prefWidth="327.0" style="-fx-background-color: #9AADD5;">
+         <children>
+            <Button fx:id="update" layoutX="76.0" layoutY="572.0" mnemonicParsing="false" onAction="#updateRecord" prefHeight="85.0" prefWidth="176.0" style="-fx-background-color: F8CFCF;" text="Resserve Now" textFill="#1d76b2" />
+            <TextField fx:id="names" alignment="CENTER" layoutX="47.0" layoutY="352.0" onAction="#searhImage" prefHeight="42.0" prefWidth="233.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <HBox layoutX="21.0" layoutY="45.0" prefHeight="287.0" prefWidth="295.0">
+               <children>
+                  <Pane fx:id="paneView" prefHeight="287.0" prefWidth="298.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="279.0" fitWidth="287.0" layoutX="4.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../thumbnail.jpg" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+               </children>
+            </HBox>
+            <Label layoutX="67.0" layoutY="399.0" opacity="0.35" text="Type the item ID and press Enter" />
+            <TextField fx:id="tfSearch" layoutX="59.0" layoutY="453.0" onAction="#search" prefHeight="32.0" prefWidth="204.0" />
+            <TextField fx:id="resserved1" layoutX="59.0" layoutY="516.0" prefHeight="26.0" prefWidth="204.0" />
+         </children></Pane>
+      <TableView fx:id="table" layoutX="332.0" layoutY="169.0" prefHeight="696.0" prefWidth="975.0" style="-fx-background-color: F8CFCF;">
+        <columns>
+          <TableColumn fx:id="itemID" editable="false" prefWidth="61.0" style="-fx-background-color: F8CFCF;" text="item ID" />
+          <TableColumn fx:id="itemName" prefWidth="245.0" style="-fx-background-color: F8CFCF;" text="ItemName" />
+            <TableColumn fx:id="stocks" prefWidth="140.0" style="-fx-background-color: F8CFCF;" text="Available Stocks" />
+            <TableColumn fx:id="uStocks" prefWidth="125.0" style="-fx-background-color: F8CFCF;" text="Upcomming Stocks" />
+            <TableColumn fx:id="uDate" prefWidth="140.0" style="-fx-background-color: F8CFCF;" text="Delivery Date" />
+            <TableColumn fx:id="allStocks" prefWidth="133.0" style="-fx-background-color: F8CFCF;" text="All Stocks" />
+            <TableColumn fx:id="resserved" prefWidth="130.0" style="-fx-background-color: F8CFCF;" text="Resserved" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="870.0" prefWidth="1317.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.LoginController">
+   <children>
+      <Pane layoutX="575.0" prefHeight="896.0" prefWidth="202.0" style="-fx-background-color: F8CFCF;" />
+      <Pane prefHeight="896.0" prefWidth="575.0" style="-fx-background-color: #9AADD5;">
+         <children>
+            <Text fill="WHITE" layoutX="183.0" layoutY="693.0" strokeType="OUTSIDE" strokeWidth="0.0" text="program by: Semicolons;" wrappingWidth="202.0">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="99.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Checker" wrappingWidth="370.1008731617647">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="41.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="449.0" fitWidth="412.0" layoutX="78.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/semicolonID.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Text fill="#9aadd5" layoutX="842.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log-in MENU" wrappingWidth="419.1317045125205">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="66.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="904.0" layoutY="459.0" prefHeight="54.0" prefWidth="316.0" promptText="Password" />
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="904.0" layoutY="392.0" prefHeight="54.0" prefWidth="316.0" promptText="Username" />
+      <Button fx:id="login" layoutX="975.0" layoutY="586.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="41.0" prefWidth="173.0" style="-fx-background-color: #9AADD5;" styleClass="btn-login" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="1053.0" layoutY="794.0" mnemonicParsing="false" onAction="#loadSecond" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: F8CFCF;" text="Create Account" textFill="#9aadd5" />
+      <Text fill="#9aadd5" layoutX="959.0" layoutY="817.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Here?" wrappingWidth="88.98307228088379">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
