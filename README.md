@@ -1,4 +1,5 @@
-Semicolons; Itemchecker
+Semicolons; Itemchecker a system where the costumers and admin Have access to the store for easy shopping.
+this system is inspired to local stores that still using paper to inventory, and in world’s current situation. So rather than risking their lives going outside to buy things, just one click in the computer and viola! Welcome to online shopping.
 
 Features:
 INSERT Item data and Client data;
